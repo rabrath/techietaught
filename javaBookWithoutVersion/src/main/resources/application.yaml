@@ -1,0 +1,20 @@
+project:
+  version: @project.version@
+
+spring:
+  application:
+    name: TechBook Inventory Application
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  data:
+    mongodb:
+      #authentication-database: admin
+      database: techBookDB
+      host: localhost
+      port: 27017
+      #username: admin
+      #password: admin
+server:
+  port: 8088
+  servlet:    context-path: /tech-book
