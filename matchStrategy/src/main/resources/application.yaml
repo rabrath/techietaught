@@ -1,0 +1,13 @@
+project:
+  version: @project.version@
+
+spring:
+  application:
+    name: matching strategy examples
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: 8085
+  servlet:
+    context-path: /matchStrategy
