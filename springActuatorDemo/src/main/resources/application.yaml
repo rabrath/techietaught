@@ -1,0 +1,34 @@
+project:
+  version: @project.version@
+  
+spring:
+  application:
+    name: Spring Boot Actuator Demo
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  data:
+    mongodb:
+      database: orderProcessDB
+      host: localhost
+      post: 27017
+      #authentication-database: admin
+      #username: admin
+      #password: admin
+
+server:
+  port: 8088
+
+management:
+  server:
+    port: 9001
+  endpoints:
+    web: 
+      exposure:
+       include:
+         - "*"
+info:
+  application:
+    name: Spring Boot Actuator
+    description: Demo on Spring Boot Actuator
+    version: 1.0.0-SNAPSHOT 
