@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Spring Security Basic Authentication
+    description: Spring Security Basic Authentication Demo
+server:
+  port: 9090
